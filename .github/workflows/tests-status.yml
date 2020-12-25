@@ -25,4 +25,4 @@ jobs:
         with:
           fetch-depth: 1
       - name: Run pytest
-        run: make tests
+        run: make pytest
