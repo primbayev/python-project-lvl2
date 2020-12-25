@@ -2,7 +2,7 @@
 packages = [
   { include = "gendiff" },
 ]
-name = "hexlet_code"
+name = "primbayev_gendiff"
 version = "0.1.0"
 description = ""
 authors = ["Aldiyar Primbayev <primbayev.96aldi@gmail.com>"]
