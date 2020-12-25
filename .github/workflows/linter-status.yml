@@ -1,4 +1,4 @@
-name: hexlet-check
+name: linter-status
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.6.12
+          python-version: 3.6.10
           architecture: x64
       - name: Checkout PyTorch
         uses: actions/checkout@master
