@@ -13,4 +13,4 @@ jobs:
         with:
           fetch-depth: 1
       - name: Run flake8 linter
-      run: make lint
+        run: make lint
