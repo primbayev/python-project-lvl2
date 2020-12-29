@@ -6,3 +6,6 @@ lint:
 
 pytest:
 	poetry run pytest
+
+coverage:
+	poetry run coverage run --omit '.venv/*' -m pytest && poetry run coverage report -m
