@@ -1,0 +1,10 @@
+{
+    brand: Ford
+  + color: red
+  + electric: false
+  + horsepower: 222
+  - model: Mustang
+  - volume: 2.2
+  - year: 1964
+  + year: 1968
+}
