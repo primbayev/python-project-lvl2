@@ -18,7 +18,7 @@ before_script:
 
 script:
   - make lint
-  - make pytest_with_coverage
+  - make coverage
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
