@@ -20,19 +20,18 @@ def get_file_format(file_path):
         return 'json'
 
 
+def decode_file(file_path):
+    file_format = get_file_format(file_path)
+
+    if file_format == 'json':
+        return json.load(open(file_path))
+    elif file_format == 'yaml':
+        return yaml.load(open(file_path), Loader=yaml.Loader)
+
+
 def decode_files(file_path1, file_path2):
-    first_file_format = get_file_format(file_path1)
-    second_file_format = get_file_format(file_path2)
-
-    if first_file_format == 'json':
-        dict1 = json.load(open(file_path1))
-    elif first_file_format == 'yaml':
-        dict1 = yaml.load(open(file_path1), Loader=yaml.Loader)
-
-    if second_file_format == 'json':
-        dict2 = json.load(open(file_path2))
-    elif second_file_format == 'yaml':
-        dict2 = yaml.load(open(file_path2), Loader=yaml.Loader)
+    dict1 = decode_file(file_path1)
+    dict2 = decode_file(file_path2)
 
     return dict1, dict2
 
