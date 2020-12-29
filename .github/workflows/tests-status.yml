@@ -21,6 +21,8 @@ jobs:
           poetry-version: 1.0.3
       - name: Install pytest
         run: pip install pytest
+      - name: Install pyyaml
+        run: pip install pyyaml
       - uses: actions/checkout@master
         with:
           fetch-depth: 1
